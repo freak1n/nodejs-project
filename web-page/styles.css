@@ -1,0 +1,9 @@
+html,body,div,header,h1,h2,section,footer,img,ul{margin:0;padding:0;}
+body{background:#46483e;border-top:6px solid #8cc84b;font-size:62.5%;font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;}
+header,section{display:block;}
+a{text-decoration:none;color:inherit;}
+#home-page{width:960px;margin:60px auto;}#home-page h1{height:66px;text-indent:-9999em;background:url("images/logo.png") no-repeat top center;}
+#home-page p{width:680px;margin:40px auto;text-align:center;line-height:180%;font-size:1.4em;color:#eee;}#home-page p a{color:#690;}
+#main-menu{width:100%;display:table;position:fixed;bottom:0;display:block;border-top:3px solid #71ac34;}#main-menu li{background-color:#8BC84B;display:table-cell;width:1%;text-align:center;line-height:40px;-webkit-transition:0.2s all ease-in-out;}#main-menu li a{font-size:1.9em;color:#46483e;text-transform:lowercase;}
+#main-menu li:hover{background-color:#71ac34;}
+.left-side{color:white;margin-bottom:0;}
