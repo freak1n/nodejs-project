@@ -53,6 +53,9 @@ http://www.nodebeginner.org/#event-driven-callbacks
 V8
 http://en.wikipedia.org/wiki/V8_(JavaScript_engine)
 
+Предимства
+http://readwrite.com/2010/10/20/why-developers-should-pay-atte
+
 
 ДРУГИ/НЕКВАЛИФИЦИРАНИ
 http://mashable.com/2011/03/10/node-js/
