@@ -1,329 +1,125 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE></TITLE>
-	<META NAME="GENERATOR" CONTENT="LibreOffice 3.6  (Linux)">
-	<META NAME="AUTHOR" CONTENT="Yavor Mihaylov">
-	<META NAME="CREATED" CONTENT="20130417;11574500">
-	<META NAME="CHANGEDBY" CONTENT="Yavor Mihaylov">
-	<META NAME="CHANGED" CONTENT="20130417;16572800">
-	<STYLE TYPE="text/css">
-	<!--
-		@page { margin: 0.79in }
-		P { margin-bottom: 0.08in; direction: ltr; color: #00000a; widows: 0; orphans: 0 }
-		P.western { font-family: "Liberation Serif", serif; font-size: 12pt; so-language: en-US }
-		P.cjk { font-family: "WenQuanYi Zen Hei Sharp"; font-size: 12pt; so-language: zh-CN }
-		P.ctl { font-family: "DejaVu Sans"; font-size: 12pt; so-language: hi-IN }
-		H1 { margin-bottom: 0.08in; direction: ltr; color: #00000a; widows: 0; orphans: 0 }
-		H1.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt; so-language: en-US }
-		H1.cjk { font-family: "WenQuanYi Zen Hei Sharp"; font-size: 16pt; so-language: zh-CN }
-		H1.ctl { font-family: "DejaVu Sans"; font-size: 16pt; so-language: hi-IN }
-		PRE { direction: ltr; color: #00000a; widows: 0; orphans: 0 }
-		PRE.western { so-language: en-US }
-		PRE.cjk { font-family: "WenQuanYi Zen Hei Sharp", monospace; so-language: zh-CN }
-		PRE.ctl { so-language: hi-IN }
-		A:link { so-language: en-US }
-		A:visited { so-language: en-US }
-	-->
-	</STYLE>
-</HEAD>
-<BODY LANG="en-US" TEXT="#00000a" DIR="LTR">
-<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT FACE="Liberation Sans, serif"><FONT SIZE=6><U>Node.js</U></FONT></FONT></P>
-<OL>
-	<LI><H1 CLASS="western">1. Какво е Node.js?</H1>
-</OL>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	Още
-от създаването си JavaScript (1995) “живее” и
-работи в браузърите. Това е просто
-контекст, който дефинира, какво може да
-се прави с езика, но не казва какво може
-да направи сам по себе си езика. JavaScript
-е “завършвен” (complete) език: може да се
-използва в много контексти и да се
-постигне всичко с него, както може да
-бъде постигнато с всички други “завършени
-” езици.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	Node.js
-е просто един друг контекст, който
-позволява да се пусне JavaScript код в back-end
-частта, извън браузъра.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	За
-да се пусне JavaScript код в back-end, трябва да
-се интерпретира и изъплни. В Node.js това
-става, чрез виртуалната машина за
-JavaScript на Google – V8, която се използва и в
-браузъра Google Chrome.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	Node.js
-е софтуерна система от страна на сървара,
-проектирана за писане на мащабни интернет
-приложения, предимно web server-и. Програмите
-се пишат от страна на сървара с JavaScript,
-използващи event-driver, asynchronous I/O за да се
-минимизира overhead-а и да се максимизира
-мащабността.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	Node.js
-създава web server oт самосебе си, правейки
-ненужно използването на web server software,
-като Apache или Lighttpd. Node.js позволява пълен
-контрол върху това, как web server-а работи.
-Node.js позволява web разработчиците да
-създават цялостни web приложения
-използвайки само един език(JavaScript), и за
-front-end-а и за back-end-а на приложението.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=4>	</FONT></FONT><FONT FACE="Arial, serif"><FONT SIZE=3>Node.js
-е пакетирана компилация от V8 JavaScript
-engine-а на Google, libUV аbstraction layer платформа.
-Създаден е от Ryan Dahl. Проекта е започнат
-от 2009 година и разработката и подръжката
-е спонсорирарана от фирма Joyent.</FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3>	Първоначалната
-цел на Dahl е да създава сайтове със push
-подръжка (push capabilities, push technology), която
-може да видим в Gmail например. Пробвайки
-различни решения в няколко различни
-програмни езика, той избира JavaScript, поради
-липсата на I/O API. Това му позволява да
-дефинира конвенция за non-blocking, event-driven
-I/O.</FONT></FONT></P>
-<P CLASS="western"><BR><BR>
-</P>
-<P CLASS="western"><FONT FACE="Arial, serif"><FONT SIZE=3>Пример
-за Web server със Node.js във файл example.js: </FONT></FONT>
-</P>
-<PRE CLASS="western"><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">var</SPAN></I></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"> http = require('http');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">http.createServer(</SPAN></SPAN></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><I><SPAN STYLE="font-weight: normal">function</SPAN></I></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"> (req, res) {</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000">  </FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">res.writeHead(200, {'Content-Type': 'text/plain'});</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000">  </FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">res.end('Hello World\n');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">}).listen(1337, '127.0.0.1');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">console.log('Server running at </SPAN></SPAN></FONT></FONT></FONT></SPAN><FONT COLOR="#000080"><SPAN LANG="en-US"><U><A HREF="http://127.0.0.1:1337/"><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">http://127.0.0.1:1337/</SPAN></SPAN></FONT></FONT></FONT></SPAN></A></U></SPAN></FONT><SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Node.js Реферат</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<div id="page-wrapper">
+		<header>
+			<h1>Node.js</h1>
+			<h2>by Yavor Mihaylov FN: 61528</h2>
+		</header>
 
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">След което, пишем в конзолата:</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#800000"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">node example.js </SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">и сървъра е стартиран на </SPAN></SPAN></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">http://127.0.0.1:1337/</SPAN></SPAN></FONT></FONT></FONT></SPAN></PRE>
-<OL START=2>
-	<LI><H1 CLASS="western"><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Пример
-	за TCP server, който слуша на порт 1337 и пише
-	в конзолата, всичко което му се изпрати:</SPAN></SPAN></FONT></FONT></FONT></SPAN></H1>
-</OL>
-<PRE CLASS="western"><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="ARial, serif"><FONT SIZE=3><I><SPAN STYLE="font-weight: normal">var</SPAN></I></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"> net = require('net');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><I><SPAN STYLE="font-weight: normal">var</SPAN></I></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"> server = net.createServer(</SPAN></SPAN></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><I><SPAN STYLE="font-weight: normal">function</SPAN></I></FONT></FONT></FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal"> (socket) {</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000">  </FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">socket.write('Echo server\r\n');</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000">  </FONT></SPAN><SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">socket.pipe(socket);</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">});</SPAN></SPAN></FONT></FONT></FONT></SPAN>
-<SPAN STYLE="font-variant: normal"><FONT COLOR="#000000"><FONT FACE="Monaco, Consolas, Lucida Console, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">server.listen(1337, '127.0.0.1');</SPAN></SPAN></FONT></FONT></FONT></SPAN></PRE><P CLASS="western">
-<BR><BR>
-</P>
-<OL START=3>
-	<LI><H1 CLASS="western"><FONT SIZE=4 STYLE="font-size: 16pt">2.
-	Event-driven nature</FONT></H1>
-</OL>
-<P CLASS="western"><FONT SIZE=4><B>Event-driven architecture (EDA)</B></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Event-driven
-architecture е шаблон за софтуерна архитектура,
-която е базирана с работа на събития.
-Като event може да се определи, значителна
-промяна на състоянието на дадено нещо.
-Например, когато клиент си купува кола,
-състоянието ан колата преминава от “за
-продан” към “продадена”. Софтуерната
-система на дилъра на коли може да третира
-тази промяна на състоянието като събитие
-(event), при което системата да направи
-промяна на данните в друга част от
-софтуерната архитектура. От формална
-гледна точка, когато се произведе,
-продаде или купи дадено нещо се изпълнява
-съобщение наречено event notification. Това
-което известява е, че самото събитие се
-е случило.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Този
-архитектурен модел може да се прилага
-при проектирането на софтуерни системи,
-при които се предават събития между
-слабо свързани софтуерни компоненти
-или услуги. Event-driven системата обикновено
-се състои от event emmitters и event consumers или
-event sinks.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Sink-овете
-имат отговорност за прилагане на реакция,
-ведналга след като event-а настъпи.
-Emmitter-ите са тези който настъпва сабитието.
-</SPAN></FONT></FONT>
-</P>
-<P CLASS="western"><FONT SIZE=4><B>Как става цялото
-това нещо в Node.js</B></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Традиционния
-начин на работа на един web server винаги е
-бил thread-based-model. Като се пусне Apache или
-някой друг web server, той започва да приема
-връзки(connections). Когато приеме някоя
-връзка, web server-а държи тази връзка отворена
-докато не се изпълни исканата страница
-или каквато и друга информация се
-изпраща. Ако тази операция отнеме няколко
-милисекунди за да се намери страницата
-на диска или да се изведе резултат от
-базата данните, web server-а блокира тази
-операция вход/изход, докато не се извърши
-цялта работа. Това е познато като blocking
-I/O. За да се мащабира този вид web server,
-трябва да се пуснат различни копия от
-сървъра, като всяко копие изисква
-различна нишка (thread) от операционната
-система, за това се казва и thread-based-model.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	В
-контраст, Node.js използва event-driven model, където
-web сървъра приема заявка, започва да я
-обработва, като междувременно получава
-и други заявки. Когато първата заявка
-е завършена, Node.js се връща на нея и изпраща
-резултатите. Така се постига не зависими
-една от друга заявки, спрямо сървъра.
-Самите заявки се подреждат в опашка и
-за всяка има callback, който се изпълнява
-когато заявката се изпълни, без да пречи
-на останалите. Този модел е високо
-ефективен и скалируем, защото web server-a,
-на практита винаги приема заявки, защото
-не чака за никакви операции за четене
-или писане. Това се нарича non-blocking I/O или
-event-driven I/O.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	За
-пример нека видим следния процес: </SPAN></FONT></FONT>
-</P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">		1.
-Използваме нашия Web browser за да направим
-заявка за страницата about.html на Node.js web
-server.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">		2.
-Node.js сървъра приема заявката и вика
-функция, която да взема този файл от
-диска.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">		3.
-Докато Node сървъра чака за файла, той
-обслужва следващия web request.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">		4.
-Когато файлът е получен от диска се вика
-callback функция която се намира в oпашката
-от такива функции на сървъра.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">		5.
-Node сървъра изпълнява тази функция, която
-в този случай обработва 	“/about.html”
-страницата и я изпраща към web browser-а</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="Arial, serif"><FONT SIZE=4><B>	</B></FONT></FONT><FONT FACE="Arial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">Сега
-сме сигурно, че в този случай, ще отнеме
-само микросекунди за сървъра за да върне
-файла, но микросекундите имат значение,
-когато говорим за големи web сървъри.
-Така Node.js се различава от останалите
-сървъри и езици за сървърно програмиране.
-</SPAN></FONT></FONT>
-</P>
-<OL START=4>
-	<LI><H1 CLASS="western"><FONT SIZE=4 STYLE="font-size: 16pt"><B>3.
-	Какво е Asynchronous I/O?</B></FONT></H1>
-</OL>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Асинхронния
-вход/изход в </SPAN></FONT></FONT><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">компютърните</SPAN></FONT></FONT><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">
-науки е форма на I/O обработка, която
-позволява при обработване на една
-операция, да започне обработка на втора,
-преди първата да е свършила. Входно/изходните
-операции в компютъра могат да бъдат
-много бавни. I/O устройството може да
-включва механични части, които трябва
-да се местят, като seeking операция на хард
-диска за четене и запис. Примерно
-поведение на I/O операция може да бъде:
-започване на операция и изчакване,
-докато операцията не се завърши.. Такова
-поведение се нарича synchronous I/O или blocking
-I/O, защото блокира процеса, докато
-програмата обработва процеса.  Когато
-има много I/O операции, това ознчава, че
-процесора прекарва по много време в
-idle, чакайки I/O оепрациите да завършат. </SPAN></FONT></FONT>
-</P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">	Алтернативата
-е да се започне комуникация и да се
-извърши processing, който не изисква I/O
-операцията да е завършена. Това поведение
-се нарича asynchronous input/output. Всяка задача,
-която всъщност зависи от I/O oперациите,
-които не са завъшрили, не може да бъде
-изпълнена, но пък, тези който не зависят
-от конкретна конкретна не изпълнена
-операция, може да продължи по работата
-си.</SPAN></FONT></FONT></P>
-<OL START=5>
-	<LI><H1 CLASS="western"><FONT SIZE=4 STYLE="font-size: 16pt"><B>4.
-	Какво е V8 JavaScript Engine?</B></FONT></H1>
-</OL>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">JavaScript
-Engine с отворен код, разработен от Google.
-Използва се в браузъра Google Chrome. Първата
-версия излиза, когато излиза и първата
-версия на Google Chrome, 2ри Септември 2008.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">V8
-компилира JavaScript до native машинен коде
-преди изпълнението му. Както други
-традиционни техники като Java Virtual Machine
-изпълнява до bytecode или го интерпретира.
-Компилирания код е допълнително
-оптимизиран динамично в runtime въз основа
-на евристични методи за изпълнение на
-код. Използват се техники за оптимизиране
-като inlining, elision, inline кеширане и много
-други.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">Garbage
-collector-а на V8 е базиран на Generational Incremental
-Collector. V8 е предназначен да се използва
-както в браузъра така и като самостоятелен
-високо производителен JavaScript Enginе, който
-може да се интегрира в различни проекти,
-както е случая за Node.js.</SPAN></FONT></FONT></P>
-<OL START=6>
-	<LI><H1 CLASS="western">5. Какво е NPM?</H1>
-</OL>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif">Npm
-е пакетен мениджър (Package Manger) за Node.js,
-който се изпълнява в терминала и управлява
-зависимостите на приложението. Node.js
-използва и други пакетни мениджър, но
-предимно npm. Според неговия автор, npm, не
-е акроним от Node.js Package Manager. От версия
-0.6.3, npm идва вградено заедно със средата
-на Node.js.</FONT></P>
-<OL START=7>
-	<LI><H1 CLASS="western">6. Предимства, които ни
-	дава node.js пред други web servers</H1>
-</OL>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">-
-Бърз е. Концепцията осъществена от V8
-virtual machine, прави изпълнението на JavaScript,
-супер бързо</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">-
-Бърз by design. Повечето приложения, които
-пишем днес са силно обвързани с I/O
-процесите. Поради event-driven природата на
-JavaScript (и Node.js), каквото и да напишем, то
-е супер бързо</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">-
-Един език за всичко. Всяко сериозно web
-приложение днес използва JavaScript, за
-подобряване на UI-a и UX-a. Например Facebook и
-Twitter използват много JavaScript за итеракциите
-между страниците. Имайки възможността
-да пишем на този език и за back-end частта
-от нашето приложение ни прави атерактивни.</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><FONT FACE="ARial, serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">-
-Много подходящ за уеб в реално време,
-тъй като Node.js е уникално пригодено за
-това</SPAN></FONT></FONT></P>
-<P CLASS="western" STYLE="line-height: 150%"><BR><BR>
-</P>
-<P CLASS="western"> 
-</P>
-</BODY>
-</HTML>
+		<article class="topic">
+			<section>
+				<h1>1. Node.js</h1>
+				&nbsp <p>Още от създаването си JavaScript (1995) “живее” и работи в браузърите. Това е просто контекст, който дефинира какво може да се прави с езика, но не казва какво може да направи сам по себе си езика. JavaScript е “завършвен” (completed) език: може да се използва в много контексти и да се постигне всичко с него, както може да бъде постигнато с всички други “завършени ” езици.
+				Node.js е просто един друг контекст, който позволява да се пусне JavaScript код в back-end частта на един или повече сайтове, извън браузъра.</p>
+				<p>За да се пусне JavaScript код в back-end, трябва да се интерпретира и изпълни. В Node.js това става, чрез виртуалната машина за JavaScript на Google – V8, която се използва и в браузъра Google Chrome.
+				Node.js е софтуерна система от страна на сървъра, проектирана за писане на мащабни интернет приложения, предимно web server-и. Програмите се пишат от страна на сървъра с JavaScript, използващи event-driver, asynchronous I/O за да се минимизира overhead-а и да се максимизира мащабността. </p>
+				<p>Node.js създава web server oт само себе си, правейки ненужно използването на web server software, като Apache или Lighttpd. Node.js позволява пълен контрол върху това, как web server-а работи. Node.js позволява web разработчиците да създават цялостни web приложения използвайки само един език (JavaScript), и за front-end-а и за back-end-а на приложението.</p>
+				<p>Node.js е пакетирана компилация от V8 JavaScript engine-а на Google, libUV аbstraction layer платформа. Създаден е от Ryan Dahl. Проекта е започнат от 2009 година и разработката и поддръжката е спонсорирана от фирма Joyent.</p>
+				<p>Първоначалната цел на Dahl е да създава сайтове със push поддръжка (push capabilities, push technology), която може да видим в Gmail например. Пробвайки различни решения в няколко различни програмни езика, той избира JavaScript, поради липсата на I/O API. Това му позволява да дефинира конвенция за non-blocking, event-driven I/O.</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>2. Event-driven nature</h1>
+				</p>
+					&nbsp Event-driven architecture е шаблон за софтуерна архитектура, която е базирана за работа със събития. Като event може да се определи, значителна промяна на състоянието на дадено нещо. Например, когато клиент си купува кола, състоянието на колата преминава от “за продан” към “продадена”, тоест си сменя текущия status. Всяка промяна на дадено нещо може да се нарече event (събитие). Софтуерната система на продавача на коли може да третира тази промяна на състоянието като събитие (event), при което системата да направи промяна на данните в друга част от софтуерната архитектура. От формална гледна точка, когато се произведе, продаде или купи дадено нещо се изпълнява съобщение наречено event notification. Това което известява е, че самото събитие се е случило.
+				</p>
+				<p>
+					Този архитектурен модел може да се прилага при проектирането на софтуерни системи, при които се предават събития между слабо свързани софтуерни компоненти или услуги. Event-driven системата обикновено се състои от event emmitters и event consumers или event sinks.
+				</p>
+				<p>
+					Sink-овете имат отговорност за прилагане на реакция, веднага след като event-а настъпи. Emmitter-ите са тези при който настъпва събитието. Например, вие като цъкнете на даден бутон в даден уеб сайт, този бутон се явява Emmitter (от него произтична събитието), а sink може да всичко, което съдържа логика за обработване на това събитие, като javascript функция или php скрипт със заявка до базата данни и т.н.
+				</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>3. Asynchronous I/O</h1>
+				</p>
+					&nbsp 	Асинхронния вход/изход в компютърните науки е форма на I/O обработка, която позволява при обработване на една операция, да започне обработка на втора, преди първата да е свършила. Входно/изходните операции в компютъра могат да бъдат много бавни. I/O устройството може да включва механични части, които трябва да се местят, като seeking операция на хард диска за четене и запис. Примерно поведение на I/O операция може да бъде: започване на операция и изчакване, докато операцията не се завърши.. Такова поведение се нарича synchronous I/O или blocking I/O, защото блокира процеса, докато програмата обработва процеса.  Когато има много I/O операции, това означава, че процесора прекарва по много време в idle, чакайки I/O операциите да завършат. 
+				</p>
+				<p>
+					Алтернативата е да се започне комуникация и да се извърши processing, който не изисква I/O операцията да е завършена. Това поведение се нарича asynchronous input/output. Всяка задача, която всъщност зависи от I/O oперациите, които не са завършили, не може да бъде изпълнена, но пък, тези който не зависят от конкретна конкретна не изпълнена операция, може да продължи по работата си.
+				</p>
+				<p>
+					Така можем с node.js да обработваме файлове много по-бързо, докато в сръвнение с php, това не е възможно, защото работи с blocking I/0
+				</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>4. V8 JavaScript Engine</h1>
+				</p>
+					&nbsp 	JavaScript Engine с отворен код, разработен от Google. Използва се в браузъра Google Chrome. Първата версия излиза, когато излиза и първата версия на Google Chrome, 2ри Септември 2008.
+				</p>
+				<p>
+					V8 компилира JavaScript до native машинен код преди изпълнението му. Както други традиционни техники като Java Virtual Machine изпълнява до bytecode или го интерпретира. Компилирания код е допълнително оптимизиран динамично в runtime въз основа на евристични методи за изпълнение на код. Използват се техники за оптимизиране като inlining, elision, inline кеширане и много други.
+				</p>
+				<p>
+					Garbage collector-а на V8 е базиран на Generational Incremental Collector. V8 е предназначен да се използва както в браузъра така и като самостоятелен високо производителен JavaScript Enginе, който може да се интегрира в различни проекти, както е случая за Node.js.
+				</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>5. NPM</h1>
+				</p>
+					Какво можем да наричаме npm?
+					NPM конзолно приложение и също така е пакетен мениджър (Package Manger) за Node.js, който се изпълнява в терминала и управлява зависимостите (dependancies) на приложението. Node.js използва и други пакетни мениджъри, но предимно npm. Според неговия автор, npm, не е акроним от Node.js Package Manager. От версия 0.6.3, npm идва вградено заедно със средата на Node.js.
+				</p>
+				<p>
+					V8 компилира JavaScript до native машинен код преди изпълнението му. Както други традиционни техники като Java Virtual Machine изпълнява до bytecode или го интерпретира. Компилирания код е допълнително оптимизиран динамично в runtime въз основа на евристични методи за изпълнение на код. Използват се техники за оптимизиране като inlining, elision, inline кеширане и много други.
+				</p>
+				<p>
+					Garbage collector-а на V8 е базиран на Generational Incremental Collector. V8 е предназначен да се използва както в браузъра така и като самостоятелен високо производителен JavaScript Enginе, който може да се интегрира в различни проекти, както е случая за Node.js.
+				</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>6. Тестване на node.js приложения</h1>
+				</p>
+					В тази част ще споменем, най-често използваните инструменти за тестване на node.js приложения:
+				</p>
+				<p>
+					Mocha<br />
+					Mocha е богат на функционалност JavaScript test framework. Може да се пусне и в node и в браузъра. Прави асинхронното тестване опростено и забавно. Mocha тестовете се изпълняват последователно и позволяват гъвкаво и детайлно отчитане на резултатите (reporting).
+				</p>
+				<p>
+					Should.js <br />
+					Обширен test framework за node. Разширява обектно-прототипния модел, като спомага на програмиста да опише, какво точно трябва да е поведението на даден обект.   Should буквално наследява концепцията assert за unit tests, като ще дадем следния пример:
+				</p>
+			</section>
+		</article>
+
+		<article class="topic">
+			<section>
+				<h1>7. Предимства, които ни дава node.js пред други web servers</h1>
+				</p>
+					- Бърз е. Концепцията осъществена от V8 virtual machine, прави изпълнението на JavaScript, супер бързо
+				</p>
+				<p>
+					- Бърз by design. Повечето приложения, които пишем днес са силно обвързани с I/O процесите. Поради event-driven природата на JavaScript (и Node.js), каквото и да напишем, то е супер бързо
+				</p>
+				<p>
+					- Един език за всичко. Всяко сериозно web приложение днес използва JavaScript, за подобряване на UI-a и UX-a. Например Facebook и Twitter използват много JavaScript за интеракциите между страниците. Имайки възможността да пишем на този език и за back-end частта от нашето приложение ни прави атеративни.
+				</p>
+				<p>
+					- Много подходящ за уеб в реално време, тъй като Node.js е уникално пригодено за това
+				</p>
+			</section>
+		</article>
+	</div>
+</body>
+</html>
