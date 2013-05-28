@@ -1,0 +1,21 @@
+Въвеждащи думи история и други общи.
+http://en.wikipedia.org/wiki/Nodejs
+http://readwrite.com/2010/10/20/why-developers-should-pay-atte
+
+NPM
+http://en.wikipedia.org/wiki/Npm_(software) 
+
+Event-Driven
+http://code.danyork.com/2011/01/25/node-js-doctors-offices-and-fast-food-restaurants-understanding-event-driven-programming/
+http://en.wikipedia.org/wiki/Event-driven_architecture
+http://readwrite.com/2011/01/25/wait-whats-nodejs-good-for-aga
+
+Async I/O
+http://en.wikipedia.org/wiki/Asynchronous_I/O
+http://www.nodebeginner.org/#event-driven-callbacks
+
+V8
+http://en.wikipedia.org/wiki/V8_(JavaScript_engine)
+
+Предимства
+http://readwrite.com/2010/10/20/why-developers-should-pay-atte

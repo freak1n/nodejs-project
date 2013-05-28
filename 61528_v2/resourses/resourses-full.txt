@@ -1,0 +1,64 @@
+//Главни ресурси
+http://en.wikipedia.org/wiki/Nodejs
+http://nodejs.org/
+http://nodejs.org/about/
+https://groups.google.com/forum/?fromgroups#!forum/nodejs
+https://groups.google.com/forum/?fromgroups#!forum/nodejs-dev
+http://en.wikipedia.org/wiki/Npm_(software)
+http://code.danyork.com/2011/01/25/node-js-doctors-offices-and-fast-food-restaurants-understanding-event-driven-programming/
+http://readwrite.com/2011/01/25/wait-whats-nodejs-good-for-aga
+http://mashable.com/2011/03/10/node-js/
+http://www.sdtimes.com/NODE_JS_PUSHES_JAVASCRIPT_TO_THE_SERVER_SIDE/By_Alex_Handy/About_JAVASCRIPT_and_NODEJS/35668
+http://nodejs.org/api/
+http://nodejs.org/community/
+http://www.nodemanual.org/
+http://www.nodebeginner.org/
+
+//Свързани ресурси
+http://venturebeat.com/2012/05/02/linkedin-ipad-app-engineering/
+http://en.wikipedia.org/wiki/Event-driven_architecture
+http://en.wikipedia.org/wiki/V8_(JavaScript_engine)
+https://github.com/joyent/libuv
+http://en.wikipedia.org/wiki/Joyent
+http://en.wikipedia.org/wiki/Push_technology
+http://en.wikipedia.org/wiki/CommonJS
+http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+
+// DEMOS AND EXAMPLES
+http://www.youtube.com/watch?v=jo_B4LTHi3I
+
+
+//NEW
+http://docs.nodejitsu.com/
+http://howtonode.org/
+
+//Използваме
+
+Въвеждащи думи история и други общи.
+http://en.wikipedia.org/wiki/Nodejs
+http://readwrite.com/2010/10/20/why-developers-should-pay-atte
+
+NPM
+http://en.wikipedia.org/wiki/Npm_(software) 
+
+Event-Driven
+http://code.danyork.com/2011/01/25/node-js-doctors-offices-and-fast-food-restaurants-understanding-event-driven-programming/
+http://en.wikipedia.org/wiki/Event-driven_architecture
+http://readwrite.com/2011/01/25/wait-whats-nodejs-good-for-aga
+
+Async I/O
+http://en.wikipedia.org/wiki/Asynchronous_I/O
+http://www.nodebeginner.org/#event-driven-callbacks
+
+V8
+http://en.wikipedia.org/wiki/V8_(JavaScript_engine)
+
+Предимства
+http://readwrite.com/2010/10/20/why-developers-should-pay-atte
+
+
+ДРУГИ/НЕКВАЛИФИЦИРАНИ
+http://mashable.com/2011/03/10/node-js/
+
+
+

@@ -1,0 +1,8 @@
+html,body,div,header,h1,h2,section,footer,img,ul{margin:0;padding:0;}
+body{background:#46483e;border-top:6px solid #8cc84b;font-size:62.5%;font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;}
+header,section{display:block;}
+a{text-decoration:none;color:inherit;}
+#page-wrapper{width:960px;margin:0 auto;}#page-wrapper header{margin-top:30px;text-align:center;}#page-wrapper header h1{font-size:3.2em;color:#8cc84b;}
+#page-wrapper header h2{color:#eee;font-size:2em;}
+#page-wrapper .topic{margin-top:10px;}#page-wrapper .topic h1{font-size:2.6em;color:#8cc84b;}
+#page-wrapper .topic section{font-size:2em;text-align:justify;color:#eee;}
